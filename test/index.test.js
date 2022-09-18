@@ -86,10 +86,10 @@ describe("index.css", () => {
     expect(rule.style["margin"], hint).to.eq("auto");
   });
 
-  it("sets <div> font-family to 'Helvetica Neue'", () => {
+  it("sets <div> font-family to 'Arial, Helvetica, sans-serif'", () => {
     const rule = findRule(css.cssRules, "div");
     const hint = "Missing font-family property for div";
-    expect(rule.style["font-family"], hint).to.contain("Helvetica Neue");
+    expect(rule.style["font-family"], hint).to.contain("Arial, Helvetica, sans-serif");
   });
 
   it("sets <div> background to white", () => {
